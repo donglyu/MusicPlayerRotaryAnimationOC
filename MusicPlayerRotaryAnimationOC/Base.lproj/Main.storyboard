@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNJ-1r-Ctg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-M9-xJB">
+                                <rect key="frame" x="82" y="328" width="250" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarDance" translatesAutoresizingMaskIntoConstraints="NO" id="8uX-bp-Tim">
+                                <rect key="frame" x="82" y="328" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ZEC-6a-JOT"/>
+                                    <constraint firstAttribute="height" constant="250" id="k9m-40-dgs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.066666666666666666" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8uX-bp-Tim" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0Ss-0a-wRR"/>
+                            <constraint firstItem="ZNJ-1r-Ctg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7IQ-AH-zpD"/>
+                            <constraint firstItem="ycT-M9-xJB" firstAttribute="leading" secondItem="8uX-bp-Tim" secondAttribute="leading" id="A1L-xX-Dpa"/>
+                            <constraint firstItem="ycT-M9-xJB" firstAttribute="trailing" secondItem="8uX-bp-Tim" secondAttribute="trailing" id="FC2-J3-Rbd"/>
+                            <constraint firstItem="ycT-M9-xJB" firstAttribute="top" secondItem="8uX-bp-Tim" secondAttribute="top" id="Jn8-sf-gfw"/>
+                            <constraint firstAttribute="top" secondItem="ZNJ-1r-Ctg" secondAttribute="bottom" id="UET-ba-9Tv"/>
+                            <constraint firstItem="ZNJ-1r-Ctg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="arH-Fc-JcN"/>
+                            <constraint firstItem="ycT-M9-xJB" firstAttribute="bottom" secondItem="8uX-bp-Tim" secondAttribute="bottom" id="j6o-57-wGw"/>
+                            <constraint firstItem="8uX-bp-Tim" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lkb-kb-0eT"/>
+                            <constraint firstAttribute="trailing" secondItem="ZNJ-1r-Ctg" secondAttribute="trailing" id="ow8-vx-Ky4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumBg" destination="ZNJ-1r-Ctg" id="Dyz-aQ-fvb"/>
+                        <outlet property="albumCover" destination="8uX-bp-Tim" id="qnG-Xv-apP"/>
+                        <outlet property="albumShadow" destination="ycT-M9-xJB" id="HrL-dx-HAQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="StarDance" width="467" height="467"/>
+    </resources>
+</document>
